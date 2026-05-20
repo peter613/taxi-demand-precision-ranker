@@ -38,16 +38,16 @@ Combining the underlying tree model's (CatBoost) feature importance with the SHA
 **III. Core Features and Commercial Insights**
 Based on the SHAP distribution, the objective impact of each variable on overall demand is as follows:
 
-**Interaction between Location (`source`) and Time (`hour`)**
+**Interaction between Location (`source`)[Str] and Time (`hour`)[Integer]**
 These are the most central variables affecting predictions. High and low values (red and blue dots) for these features are broadly and evenly scattered across both positive and negative ranges. This shows that time and location have significant, complex, non-linear effects on demand—no single variable can determine the outcome. The model heavily relies on their interaction (e.g., specific times at specific locations) to accurately calculate total demand.
 
-**Rain Intensity (`precipIntensity`) [Crucial Insight & Simpson's Paradox]**
+**Rain Intensity (`precipIntensity`)[Float]**
 The chart shows that most no-rain or light-rain conditions (blue dots) have almost no impact on predictions. Notably, high rain intensity (red dots) has a significant portion falling on the left side (negative impact). This shatters the intuitive assumption that "rain inevitably increases taxi demand." because people cancel their outdoor plans entirely.
 
-**Temperature (`temperature`)**
+**Temperature (`temperature`)[Float]**
 High temperatures (red dots) and low temperatures (blue dots) are both scattered on both sides of 0. This further validates the non-linear interactive nature of the model: extreme temperatures do not absolutely drive impact in a single direction. Whether they increase or decrease demand depends on the combination of time and location conditions at that moment.
 
-**Weekend Status (`is_weekend`)**
+**Weekend Status (`is_weekend`)[Binary]**
 Low values representing weekdays (blue dots) are highly concentrated near 0 and lean slightly right, showing that weekday commuting patterns provide a stable baseline support for the taxi market. High values representing weekends (red dots) are more scattered, with some falling into the negative range, indicating that under certain conditions, overall weekend demand can actually drop below weekday levels.
 
 ### Visualizing the Interactions
@@ -87,20 +87,20 @@ To empirically prove the crossover interactions found in the SHAP analysis, thre
 * **模型結構分類基礎**：模型在建立決策樹路徑時，高度依賴「地點 (source)」與「是否為週末 (is_weekend)」進行基礎資料劃分，這對降低整體預測誤差至關重要。
 * **數值波動主要驅動力**：在實際推動需求增減的絕對數值上，「地點 (source)」與「時間 (hour)」造成了最廣泛且深遠的波動。相對而言，天氣因素（溫度與降雨）屬於次要的動態調整變數。
 
-**三、 核心特徵與商業洞察分析**
+**三、 核心特徵與分析**
 依據 SHAP 圖表分佈特徵，各變數對總體需求的客觀影響如下：
 
-**地點 (source) 與 時間 (hour) 的交互作用**
+**地點 (source)[Str] & 時間 (hour)[Integer]的交互作用**
 此二者為影響預測數值的最核心變數。圖表中這兩個特徵的高低數值（紅藍點）廣泛且均勻地散佈在正值與負值區間。這顯示時間與地點對需求具有顯著且複雜的非線性影響，單一變數無法決定全局。模型高度依賴這兩者的交互作用（例如特定時間搭配特定地點）來精確計算總體需求。
 
-**降雨強度 (precipIntensity) [關鍵反直覺洞察與辛普森悖論]**
+**降雨強度 (precipIntensity)[Float]**
 圖表顯示，多數無雨或微雨（藍點）狀態對預測幾乎無影響。值得注意的是，高降雨強度（紅點）不僅出現在正值區間，更有顯著比例落在左側（負向影響）。這打破了「下雨必定增加叫車需求」的直覺。
 因為當雨勢達到極端情況時，人們傾向直接取消外出行程，總體活動人數的驟降導致總體叫車需求隨之萎縮。
 
-**溫度 (temperature)**
+**溫度 (temperature)[Float]**
 高溫（紅點）與低溫（藍點）皆散佈在 0 的兩側。這進一步印證了非線性模型的交互作用特性：極端溫度並不絕對帶來單一方向的影響。其對需求的增減，需視當時的時間與地點條件共同判定。
 
-**是否為週末 (is_weekend)**
+**是否為週末 (is_weekend)[Binary]**
 代表平日的低數值（藍點）高度集中在 0 的附近且微幅偏向右側，顯示平日通勤規律為計程車市場提供了穩定的基礎需求支撐。代表週末的高數值（紅點）分佈較為發散，且有部分落在負值區間，顯示在特定條件下，週末的總體需求量反而會低於平日水準。
 
 ### 資料視覺化：驗證交叉效應
