@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cfc4817e4b77881d103ffe65cae485e3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cfc4817e4b77881d103ffe65cae485e3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cfc4817e4b77881d103ffe65cae485e3 = L.map(
+                "map_cfc4817e4b77881d103ffe65cae485e3",
+                {
+                    center: [42.355, -71.065],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_24d4ec288f66f643afdcf6d033b58047 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_24d4ec288f66f643afdcf6d033b58047.addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var marker_04bb2726a1f20ef444edd1203ecb2451 = L.marker(
+                [42.2148, -71.033],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_782fd1f513d7438417a8c1874547984b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50cea9f3351d14cefd70570330d279ad = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eb3115bde47999ecd8ad55ea44572fd2 = $(`<div id="html_eb3115bde47999ecd8ad55ea44572fd2" style="width: 100.0%; height: 100.0%;"><b>Haymarket Square</b><br><i>Commercial/Historic</i></div>`)[0];
+                popup_50cea9f3351d14cefd70570330d279ad.setContent(html_eb3115bde47999ecd8ad55ea44572fd2);
+            
+        
+
+        marker_04bb2726a1f20ef444edd1203ecb2451.bindPopup(popup_50cea9f3351d14cefd70570330d279ad)
+        ;
+
+        
+    
+    
+            marker_04bb2726a1f20ef444edd1203ecb2451.bindTooltip(
+                `<div>
+                     Haymarket Square
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_04bb2726a1f20ef444edd1203ecb2451.setIcon(icon_782fd1f513d7438417a8c1874547984b);
+            
+    
+            var marker_e4b1fa8b3959f4e2437fe6957af1efd3 = L.marker(
+                [42.3503, -71.081],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_d7aa521f14fabe109cd3a1b50093e0c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_019f2c7777acabfa6c9e0c5d51c75a18 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_356968047f008dd77d22c3d1921a751f = $(`<div id="html_356968047f008dd77d22c3d1921a751f" style="width: 100.0%; height: 100.0%;"><b>Back Bay</b><br><i>Commercial/Residential</i></div>`)[0];
+                popup_019f2c7777acabfa6c9e0c5d51c75a18.setContent(html_356968047f008dd77d22c3d1921a751f);
+            
+        
+
+        marker_e4b1fa8b3959f4e2437fe6957af1efd3.bindPopup(popup_019f2c7777acabfa6c9e0c5d51c75a18)
+        ;
+
+        
+    
+    
+            marker_e4b1fa8b3959f4e2437fe6957af1efd3.bindTooltip(
+                `<div>
+                     Back Bay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4b1fa8b3959f4e2437fe6957af1efd3.setIcon(icon_d7aa521f14fabe109cd3a1b50093e0c8);
+            
+    
+            var marker_87fc0b69d8055aef4abdc4b0b398885e = L.marker(
+                [42.3647, -71.0542],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_66d4011febae160530cae5080c9005e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d6cc9842732ccde792a51d16197dab9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1a9e4692573df136164b4acf2b45d40d = $(`<div id="html_1a9e4692573df136164b4acf2b45d40d" style="width: 100.0%; height: 100.0%;"><b>North End</b><br><i>Nightlife/Dining</i></div>`)[0];
+                popup_8d6cc9842732ccde792a51d16197dab9.setContent(html_1a9e4692573df136164b4acf2b45d40d);
+            
+        
+
+        marker_87fc0b69d8055aef4abdc4b0b398885e.bindPopup(popup_8d6cc9842732ccde792a51d16197dab9)
+        ;
+
+        
+    
+    
+            marker_87fc0b69d8055aef4abdc4b0b398885e.bindTooltip(
+                `<div>
+                     North End
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_87fc0b69d8055aef4abdc4b0b398885e.setIcon(icon_66d4011febae160530cae5080c9005e8);
+            
+    
+            var marker_a041b4531e1d3209378feec1640ad5cd = L.marker(
+                [42.3661, -71.0631],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_95c45570d682ce8740aa4668299109c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_409678cbbc2d84b1b52b864d741f1a42 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0fe0856c678ff98a5a9f22666009d42f = $(`<div id="html_0fe0856c678ff98a5a9f22666009d42f" style="width: 100.0%; height: 100.0%;"><b>North Station</b><br><i>Transit</i></div>`)[0];
+                popup_409678cbbc2d84b1b52b864d741f1a42.setContent(html_0fe0856c678ff98a5a9f22666009d42f);
+            
+        
+
+        marker_a041b4531e1d3209378feec1640ad5cd.bindPopup(popup_409678cbbc2d84b1b52b864d741f1a42)
+        ;
+
+        
+    
+    
+            marker_a041b4531e1d3209378feec1640ad5cd.bindTooltip(
+                `<div>
+                     North Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a041b4531e1d3209378feec1640ad5cd.setIcon(icon_95c45570d682ce8740aa4668299109c9);
+            
+    
+            var marker_57d8cbb4dae027cbd016d50ea3901c6e = L.marker(
+                [42.3588, -71.0707],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_f81b96e085a282e73f3f78be7ed1798c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb247d502ffe1cf90cd01c8a2e2e69ac = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_bd10ed8c583a6f7b284a4280d7696680 = $(`<div id="html_bd10ed8c583a6f7b284a4280d7696680" style="width: 100.0%; height: 100.0%;"><b>Beacon Hill</b><br><i>Residential</i></div>`)[0];
+                popup_eb247d502ffe1cf90cd01c8a2e2e69ac.setContent(html_bd10ed8c583a6f7b284a4280d7696680);
+            
+        
+
+        marker_57d8cbb4dae027cbd016d50ea3901c6e.bindPopup(popup_eb247d502ffe1cf90cd01c8a2e2e69ac)
+        ;
+
+        
+    
+    
+            marker_57d8cbb4dae027cbd016d50ea3901c6e.bindTooltip(
+                `<div>
+                     Beacon Hill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_57d8cbb4dae027cbd016d50ea3901c6e.setIcon(icon_f81b96e085a282e73f3f78be7ed1798c);
+            
+    
+            var marker_fde93cda363279f19a384cb107368bad = L.marker(
+                [42.3505, -71.1054],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_ca5fe158461bc65bfdf4fa8af08abada = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1b789bb3eb82d84f391b9973cef0a9c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2ebd714f2c676126430b7635c9ec1ca3 = $(`<div id="html_2ebd714f2c676126430b7635c9ec1ca3" style="width: 100.0%; height: 100.0%;"><b>Boston University</b><br><i>Campus</i></div>`)[0];
+                popup_e1b789bb3eb82d84f391b9973cef0a9c.setContent(html_2ebd714f2c676126430b7635c9ec1ca3);
+            
+        
+
+        marker_fde93cda363279f19a384cb107368bad.bindPopup(popup_e1b789bb3eb82d84f391b9973cef0a9c)
+        ;
+
+        
+    
+    
+            marker_fde93cda363279f19a384cb107368bad.bindTooltip(
+                `<div>
+                     Boston University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fde93cda363279f19a384cb107368bad.setIcon(icon_ca5fe158461bc65bfdf4fa8af08abada);
+            
+    
+            var marker_1acccb2418c76bab4d5c478d27c2404e = L.marker(
+                [42.3505, -71.1054],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_4373ba9e90b68ad4d948d11d97e79376 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3db6f271759265a8efbb708bac0b057 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fee900a72f087aeeae27437e070c75c5 = $(`<div id="html_fee900a72f087aeeae27437e070c75c5" style="width: 100.0%; height: 100.0%;"><b>Fenway</b><br><i>Sports/Campus</i></div>`)[0];
+                popup_b3db6f271759265a8efbb708bac0b057.setContent(html_fee900a72f087aeeae27437e070c75c5);
+            
+        
+
+        marker_1acccb2418c76bab4d5c478d27c2404e.bindPopup(popup_b3db6f271759265a8efbb708bac0b057)
+        ;
+
+        
+    
+    
+            marker_1acccb2418c76bab4d5c478d27c2404e.bindTooltip(
+                `<div>
+                     Fenway
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1acccb2418c76bab4d5c478d27c2404e.setIcon(icon_4373ba9e90b68ad4d948d11d97e79376);
+            
+    
+            var marker_23cb690be89ab2159d0903f4d749b1d4 = L.marker(
+                [42.3519, -71.0551],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_ccd0bf92b946e89a3c3040aff84c0406 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d8accba7dfab0e59b3d76b2d227565d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_84f79b6012c9d98599a1bd27245a80da = $(`<div id="html_84f79b6012c9d98599a1bd27245a80da" style="width: 100.0%; height: 100.0%;"><b>South Station</b><br><i>Transit</i></div>`)[0];
+                popup_5d8accba7dfab0e59b3d76b2d227565d.setContent(html_84f79b6012c9d98599a1bd27245a80da);
+            
+        
+
+        marker_23cb690be89ab2159d0903f4d749b1d4.bindPopup(popup_5d8accba7dfab0e59b3d76b2d227565d)
+        ;
+
+        
+    
+    
+            marker_23cb690be89ab2159d0903f4d749b1d4.bindTooltip(
+                `<div>
+                     South Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23cb690be89ab2159d0903f4d749b1d4.setIcon(icon_ccd0bf92b946e89a3c3040aff84c0406);
+            
+    
+            var marker_315d14dc93841e1b15556a014fa867d6 = L.marker(
+                [42.2148, -71.033],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_b088aff49a931fd3e31f088cafc983fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81ba61d3a9760ddfdcc50dd6846926e0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_20af916c57c10137eb80054a9e0d5b70 = $(`<div id="html_20af916c57c10137eb80054a9e0d5b70" style="width: 100.0%; height: 100.0%;"><b>Theatre District</b><br><i>Nightlife</i></div>`)[0];
+                popup_81ba61d3a9760ddfdcc50dd6846926e0.setContent(html_20af916c57c10137eb80054a9e0d5b70);
+            
+        
+
+        marker_315d14dc93841e1b15556a014fa867d6.bindPopup(popup_81ba61d3a9760ddfdcc50dd6846926e0)
+        ;
+
+        
+    
+    
+            marker_315d14dc93841e1b15556a014fa867d6.bindTooltip(
+                `<div>
+                     Theatre District
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_315d14dc93841e1b15556a014fa867d6.setIcon(icon_b088aff49a931fd3e31f088cafc983fa);
+            
+    
+            var marker_03a9da7abdbce51c42eca59aeab72532 = L.marker(
+                [42.3661, -71.0631],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_5f707f75d8ced9c44b2ea775eb922ac5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2515920010a46c458af8442c58f41141 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_11d9283440f34c3952bde3b8c8d04799 = $(`<div id="html_11d9283440f34c3952bde3b8c8d04799" style="width: 100.0%; height: 100.0%;"><b>West End</b><br><i>Residential</i></div>`)[0];
+                popup_2515920010a46c458af8442c58f41141.setContent(html_11d9283440f34c3952bde3b8c8d04799);
+            
+        
+
+        marker_03a9da7abdbce51c42eca59aeab72532.bindPopup(popup_2515920010a46c458af8442c58f41141)
+        ;
+
+        
+    
+    
+            marker_03a9da7abdbce51c42eca59aeab72532.bindTooltip(
+                `<div>
+                     West End
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_03a9da7abdbce51c42eca59aeab72532.setIcon(icon_5f707f75d8ced9c44b2ea775eb922ac5);
+            
+    
+            var marker_6a1159ed5d4240d75fb0b9169110a207 = L.marker(
+                [42.3559, -71.055],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_660a7162f0b63bbf0852f7eac8876c10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2728e0ff18607612bfe0ee7835c66e7e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2a30337bd246e85a0f1a2b2f904d3c71 = $(`<div id="html_2a30337bd246e85a0f1a2b2f904d3c71" style="width: 100.0%; height: 100.0%;"><b>Financial District</b><br><i>Business</i></div>`)[0];
+                popup_2728e0ff18607612bfe0ee7835c66e7e.setContent(html_2a30337bd246e85a0f1a2b2f904d3c71);
+            
+        
+
+        marker_6a1159ed5d4240d75fb0b9169110a207.bindPopup(popup_2728e0ff18607612bfe0ee7835c66e7e)
+        ;
+
+        
+    
+    
+            marker_6a1159ed5d4240d75fb0b9169110a207.bindTooltip(
+                `<div>
+                     Financial District
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a1159ed5d4240d75fb0b9169110a207.setIcon(icon_660a7162f0b63bbf0852f7eac8876c10);
+            
+    
+            var marker_e551618bd07cfbec6b24d26f4564f27a = L.marker(
+                [42.3398, -71.0892],
+                {
+}
+            ).addTo(map_cfc4817e4b77881d103ffe65cae485e3);
+        
+    
+            var icon_e4b689aa708730de6d3033355687ceee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c46196773e52633e8da26344a6ee0a1a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6b108d4429d39609a403ca720952055c = $(`<div id="html_6b108d4429d39609a403ca720952055c" style="width: 100.0%; height: 100.0%;"><b>Northeastern University</b><br><i>Campus</i></div>`)[0];
+                popup_c46196773e52633e8da26344a6ee0a1a.setContent(html_6b108d4429d39609a403ca720952055c);
+            
+        
+
+        marker_e551618bd07cfbec6b24d26f4564f27a.bindPopup(popup_c46196773e52633e8da26344a6ee0a1a)
+        ;
+
+        
+    
+    
+            marker_e551618bd07cfbec6b24d26f4564f27a.bindTooltip(
+                `<div>
+                     Northeastern University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e551618bd07cfbec6b24d26f4564f27a.setIcon(icon_e4b689aa708730de6d3033355687ceee);
+            
+</script>
+</html>

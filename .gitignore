@@ -1,0 +1,7 @@
+# Python
+__pycache__/
+*.pyc
+catboost_info/
+
+# Raw data too large for GitHub (367MB), download from Kaggle link in README
+data/rideshare_kaggle.csv
